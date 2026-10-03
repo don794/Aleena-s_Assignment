@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Aleena Bilal</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      background: linear-gradient(135deg, #191717, #2e0854);
+      color: #eee;
+    }
+    nav {
+      background: linear-gradient(135deg, #191717, #541c8b);
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #a64dff;
+      text-shadow: 0 0 8px #a57bcf;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+   table {
+  width: 85%; /* thoda chhota rakho taake dono sides pe equal space aaye */
+  margin: 50px auto; /* equal left-right margin */
+  border-collapse: collapse;
+  color: #fff;
+  border: 1px solid #eee;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+th {
+  background: linear-gradient(black, #351551);
+  color: #fff;
+}
+
+td {
+  background: transparent;
+}
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .result-box {
+      width: 200px;
+      height: 90px;
+      padding-top: 40px;
+      padding-bottom: 10px;
+      margin-top: auto;
+      margin-bottom: 45px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: larger;
+      justify-content: center;
+      background: linear-gradient(135deg, #191717, #541c8b);
+    }
+    .card {
+      background: #7e47aea0;
+      color: #fff;
+      padding: 15px;
+      margin: 20px;
+      border-radius: 12px;
+      display: inline-flex;
+      
+      transition: all 0.3s ease;
+      font-size: large;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #66299c;
+      width: 100%;
+      color: #aaa;
+      text-align: center;
+      margin-bottom: none;
+      padding: 10px 0;
+      font-size: small;
+    }
+   footer:hover {
+      text-shadow: 0 0 10px #a64dff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home" class="card">Home</a>
+    <a href="about.html" class="card">About</a>
+    <a href="contact.html" class="card">Contact</a>
+   
+  </nav>
+
+  <section id="home">
+    
+    <section id="home">
+  <h2>Result Table</h2>
+  <table id="resultTable">
+    <tr>
+      <th>Subject</th>
+      <th>Course Code</th>
+      <th>Marks</th>
+      <th>Percentage</th>
+      <th>GPA</th>
+    </tr>
+    <tr>
+      <td>Programming Fundamentals</td>
+      <td>CS101</td>
+      <td>85</td>
+      <td>85%</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>Database Systems</td>
+      <td>CS202</td>
+      <td>78</td>
+      <td>78%</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>Operating Systems</td>
+      <td>CS303</td>
+      <td>90</td>
+      <td>90%</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>Computer Networks</td>
+      <td>CS304</td>
+      <td>82</td>
+      <td>82%</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>Software Engineering</td>
+      <td>CS305</td>
+      <td>75</td>
+      <td>75%</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Artificial Intelligence</td>
+      <td>CS306</td>
+      <td>88</td>
+      <td>88%</td>
+      <td>3.8</td>
+    </tr>
+  </table>
+</section>
+
+
+    <div class="result-box">
+     TOTAL GPA= <span id="totalGPA">0</span> 
+     <br>
+     <br>
+     TOTAL CGPA= <span id="totalCGPA">0</span>
+
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>© 2026 All rights reserved to Aleena Bilal</p>
+  </footer>
+</body>
+</html>
